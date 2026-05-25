@@ -4,7 +4,7 @@ Aplicación web desarrollada con React para explorar un catálogo de dragones de
 
 ##  Autor
 
-**Jacob Alopez** – Ingeniería de Sistemas y Computación
+**Jacobo ochoa lopez** – Ingeniería de Sistemas y Computación
 
 ##  Tecnologías usadas
 
