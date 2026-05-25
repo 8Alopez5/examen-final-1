@@ -1,32 +1,67 @@
-# DragonDex - Examen Final
+#  DragonDex
 
-Catálogo de dragones usando PokéAPI.
+Aplicación web desarrollada con React para explorar un catálogo de dragones del mundo mágico.
 
-## Instalación
-1. Clonar el repositorio
-2. `npm install`
-3. `npm run dev`
+##  Autor
 
-## Estructura
-El proyecto ya tiene la configuración base con Vite, React Router, Tailwind CSS y Font Awesome.
-Debes implementar la lógica en los archivos existentes según las instrucciones del examen.
+**Jacob Alopez** – Ingeniería de Sistemas y Computación
 
-# Use of fontAwesome
-```<i className="fas fa-thumbs-up fa-5x"></i>```
-All icons: https://fontawesome.com/search?ic=free-collection 
+##  Tecnologías usadas
 
-# Use of react Icons
-example usage
+- React + Vite
+- TypeScript
+- Tailwind CSS
+- React Router DOM
+- React Icons
+- PokéAPI
 
-```
-import { FaBeer } from "react-icons/fa";
+##  Instalación y ejecución
 
-function Question() {
-  return (
-    <h3>
-      Lets go for a <FaBeer />?
-    </h3>
-  );
-}
-```
-All icons: https://react-icons.github.io/react-icons/
+1. Clona el repositorio:
+
+git clone https://github.com/8Alopez5/examen-final-1.git
+
+2. Entra a la carpeta del proyecto:
+
+cd examen-final-1
+
+3. Instala las dependencias:
+
+npm install --legacy-peer-deps
+
+4. Corre el proyecto:
+
+npm run dev
+
+5. Abre el navegador en http://localhost:5173
+
+##  Funcionalidades
+
+- Catálogo de 20 dragones cargado desde la PokéAPI
+- Búsqueda en tiempo real por nombre
+- Vista de detalle con imagen, tipos, HP, Ataque y Defensa
+- Sistema de favoritos con Context API
+- Estados de carga, error y lista vacía
+- Diseño responsivo con Tailwind CSS
+- Navegación entre páginas con React Router
+
+##  Estructura del proyecto
+
+src/
+├── components/
+│   ├── DragonCard.tsx
+│   ├── DragonList.tsx
+│   ├── SearchBar.tsx
+│   ├── Loader.tsx
+│   ├── ErrorMessage.tsx
+│   └── EmptyState.tsx
+├── context/
+│   └── FavoritesContext.tsx
+├── pages/
+│   ├── Home.tsx
+│   ├── DragonDetail.tsx
+│   └── Favorites.tsx
+├── services/
+│   └── DragonService.ts
+├── App.tsx
+└── main.tsx
